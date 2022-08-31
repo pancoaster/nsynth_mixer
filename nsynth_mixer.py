@@ -90,8 +90,8 @@ fname2 = 'cresendo_prog_piano_42.wav'
 ckpt_path = os.path.abspath('model.ckpt-200000')
 sr = 16000
 
-audio = utils.load_audio(fname, sample_length=20000, sr=sr)
-audio2 = utils.load_audio(os.path.abspath(fname2, sample_length=sr*2, sr=sr)
+audio = utils.load_audio(fname, sample_length=sr*2, sr=sr)
+audio2 = utils.load_audio(fname2, sample_length=sr*2, sr=sr)
 
 sample_length = audio.shape[0]
 sample_length2 = audio2.shape[0]
